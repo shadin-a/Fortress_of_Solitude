@@ -35,7 +35,7 @@ function MatchingPostBanner({ job }) {
         postTitle: newTitle,
         postId: job._id,
       };
-       await editTitle({
+      const { data } = await editTitle({
         variables: { jobData },
       });
 
